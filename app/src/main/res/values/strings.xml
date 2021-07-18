@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Vsis3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">VSIS</string>
+    <string name="nav_header_subtitle">vsis.test@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_info">Informações</string>
+
+    <string name="menu_inicio">Início</string>
+    <string name="menu_equipe">Equipe</string>
+    <string name="menu_eventos">Eventos</string>
+    <string name="menu_palestras">Palestras</string>
+    <string name="menu_oficinas">Oficinas</string>
+    <string name="menu_materiais">Materiais</string>
+</resources>
