@@ -1,13 +1,18 @@
-package com.example.vsis3;
+package com.example.vsis3.activies;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.Menu;
+import android.widget.Toast;
 
+import com.example.vsis3.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
@@ -60,4 +65,24 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId()== R.id.action_settings){
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            builder.setTitle("Tauane Costa");
+            builder.setMessage("Programação para Web 3");
+            builder.setIcon(R.drawable.ic_logo_ifrs);
+            //define um botão como positivo
+            builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface arg0, int arg1) {
+                    Toast.makeText(MainActivity.this, "Você clicou no botão Ok", Toast.LENGTH_SHORT).show();
+                }
+            });
+            AlertDialog alerta = builder.create();
+            alerta.show();//mostra a janela
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
