@@ -6,11 +6,14 @@
     <string name="nav_header_subtitle">vsis.test@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_info">Informações</string>
+    <string name="edit">Editar</string>
+    <string name="excluir">Excluir</string>
+
 
     <string name="menu_inicio">Início</string>
-    <string name="menu_equipe">Equipe</string>
-    <string name="menu_eventos">Eventos</string>
-    <string name="menu_palestras">Palestras</string>
-    <string name="menu_oficinas">Oficinas</string>
-    <string name="menu_materiais">Materiais</string>
+    <string name="menu_listarequipe">Listar Equipe</string>
+    <string name="menu_addmember">Adicionar Novo Membro</string>
+    <string name="name">Nome</string>
+    <string name="role">Função</string>
+    <string name="btnAdd">Adicionar</string>
 </resources>
