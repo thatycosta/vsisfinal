@@ -5,6 +5,7 @@
     android:id="@+id/layoutLogin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/ivory"
     android:orientation="vertical">
 
 
@@ -22,6 +23,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtNome"
             android:hint="@string/name"
+            android:backgroundTint="@color/white"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -38,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtRole"
+            android:backgroundTint="@color/white"
             android:hint="@string/role"
             android:inputType="text|date" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -55,6 +58,7 @@
         android:id="@+id/btnEditar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="@string/edit"
         />
 

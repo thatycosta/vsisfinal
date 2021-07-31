@@ -40,8 +40,8 @@ public class ListFragment extends Fragment {
 
             @Override
             protected List<TeamMemberEntity> doInBackground(Void... voids) {
-                TeamMemberDAO tarefaDAO = AppDataBase.getInstance(getContext().getApplicationContext()).createTeamMemberDAO();
-                return tarefaDAO.getAllMembers();
+                TeamMemberDAO teamMemberDAO = AppDataBase.getInstance(getContext().getApplicationContext()).createTeamMemberDAO();
+                return teamMemberDAO.getAllMembers();
             }
 
             @Override
@@ -53,11 +53,8 @@ public class ListFragment extends Fragment {
         }.execute();
 
         recyclerView.setHasFixedSize(true);
-
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext());
-
         recyclerView.setLayoutManager(layoutManager);
-
 
         return root;
     }

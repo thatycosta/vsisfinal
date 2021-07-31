@@ -20,12 +20,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.vsis3.ui.gallery.GalleryFragment"
-        android:label="@string/menu_listarequipe"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
         android:id="@+id/nav_editPessoa"
         android:name="com.example.vsis3.fragments.EditMemberFragment"
         android:label="Edição de Cadastro de Membro"
@@ -44,4 +38,10 @@
             android:id="@+id/action_nav_add_to_nav_list"
             app:destination="@id/nav_list" />
     </fragment>
+
+    <fragment
+        android:id="@+id/impl"
+        android:name="com.example.vsis3.fragments.ImplicityFragment"
+        android:label="IFRS"
+        tools:layout="@layout/fragment_list" />
 </navigation>

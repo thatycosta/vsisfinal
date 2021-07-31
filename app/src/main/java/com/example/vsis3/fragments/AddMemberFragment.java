@@ -45,12 +45,12 @@ public class AddMemberFragment extends Fragment {
                         teamMemberEntity.setRole(role.getText().toString());
                         teamMemberDAO.insert(teamMemberEntity);
 
-                        Snackbar snackbar = Snackbar.make(view, "Membro adicionado = " + name.getText().toString(), Snackbar.LENGTH_LONG);
-                        snackbar.show();
-
                         return teamMemberEntity.getId();
                     }
                 }.execute();
+
+                Snackbar snackbar = Snackbar.make(view, "Membro adicionado com sucesso!", Snackbar.LENGTH_LONG);
+                snackbar.show();
                 Navigation.findNavController(view).navigate(R.id.action_nav_add_to_nav_list);
             }
         });

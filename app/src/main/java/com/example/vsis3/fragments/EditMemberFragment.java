@@ -50,31 +50,16 @@ public class EditMemberFragment extends Fragment {
                         teamMemberEntity.setRole(role.getText().toString());
                         teamMemberDAO.update(teamMemberEntity);
 
-                        Snackbar snackbar = Snackbar.make(view, "Membro editado com sucesso! Nome: " + name.getText().toString(), Snackbar.LENGTH_LONG);
-                        snackbar.show();
 
                         return teamMemberEntity.getId();
                     }
                 }.execute();
+
+                Snackbar snackbar = Snackbar.make(view, "Membro atualizado com sucesso!", Snackbar.LENGTH_LONG);
+                snackbar.show();
                 Navigation.findNavController(view).navigate(R.id.action_nav_edit_to_nav_list);
             }
         });
         return root;
-    }
-
-    public void editarItem() {
-        new AlertDialog.Builder(getContext())
-                .setTitle("Edição Membro")
-                .setMessage("Tem certeza que deseja editar essa pessoa?")
-                .setPositiveButton("Sim", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        TeamMemberDAO teamMemberDAO = AppDataBase.getInstance(getContext().getApplicationContext()).createTeamMemberDAO();
-                        TeamMemberEntity teamMemberEntity = new TeamMemberEntity();
-                        teamMemberEntity.getId();
-                        Snackbar.make(getView(), "item editado!!!", Snackbar.LENGTH_LONG).show();
-                        Navigation.createNavigateOnClickListener(R.id.nav_list, null);
-                    }
-                }).setNegativeButton("Não", null).show();
     }
 }
