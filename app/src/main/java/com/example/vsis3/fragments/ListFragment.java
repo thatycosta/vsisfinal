@@ -23,9 +23,11 @@ import java.util.List;
 
 public class ListFragment extends Fragment {
     RecyclerView recyclerView;
+
     public static ListFragment newInstance() {
         return new ListFragment();
     }
+
     @SuppressLint("StaticFieldLeak")
     @Nullable
     @Override

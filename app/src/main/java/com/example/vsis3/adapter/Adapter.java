@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vsis3.R;
 import com.example.vsis3.entity.TeamMemberEntity;
+import com.example.vsis3.fragments.ListFragment;
 import com.example.vsis3.model.TeamMember;
 
 import java.util.ArrayList;
@@ -24,6 +25,7 @@ import java.util.List;
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     List<TeamMemberEntity> teamMembers = new ArrayList<>();
     Context context;
+
     public Adapter(List<TeamMemberEntity> teamMembers) {
         this.teamMembers = teamMembers;
     }
@@ -39,8 +41,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull Adapter.ViewHolder viewHolder, final int position) {
-        5
-
         TeamMemberEntity teamMemberEntity = teamMembers.get(position);
         viewHolder.name.setText(teamMemberEntity.getName());
         viewHolder.role.setText(teamMemberEntity.getRole());
