@@ -28,13 +28,17 @@
     <fragment
         android:id="@+id/nav_editPessoa"
         android:name="com.example.vsis3.fragments.EditMemberFragment"
-        android:label="@string/menu_listarequipe"
-        tools:layout="@layout/fragment_editmember" />
+        android:label="Edição de Cadastro de Membro"
+        tools:layout="@layout/fragment_editmember">
+        <action
+            android:id="@+id/action_nav_add_to_nav_list"
+            app:destination="@id/nav_list" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_cad"
         android:name="com.example.vsis3.fragments.AddMemberFragment"
-        android:label="detalhes"
+        android:label="Cadastro de Novo Membro"
         tools:layout="@layout/fragment_addmember" >
         <action
             android:id="@+id/action_nav_add_to_nav_list"

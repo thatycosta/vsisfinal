@@ -18,7 +18,7 @@ public interface TeamMemberDAO {
     public List<TeamMemberEntity> getAllMembers();
 
     @Query("SELECT * FROM TeamMemberEntity WHERE name = :name")
-    public List<TeamMemberEntity> getTeamMemberByName(String name);
+    public TeamMemberEntity getTeamMemberByName(String name);
 
     @Insert(onConflict = REPLACE)
     public void insert(TeamMemberEntity teamMemberEntity);
@@ -28,4 +28,5 @@ public interface TeamMemberDAO {
 
     @Delete
     public void delete(TeamMemberEntity teamMemberEntity);
+
 }

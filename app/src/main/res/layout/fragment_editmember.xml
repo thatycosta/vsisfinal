@@ -37,7 +37,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/txtDtNasc"
+            android:id="@+id/txtRole"
             android:hint="@string/role"
             android:inputType="text|date" />
     </com.google.android.material.textfield.TextInputLayout>
