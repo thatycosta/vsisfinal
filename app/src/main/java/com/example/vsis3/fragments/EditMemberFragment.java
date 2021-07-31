@@ -50,12 +50,13 @@ public class EditMemberFragment extends Fragment {
                         teamMemberEntity.setRole(role.getText().toString());
                         teamMemberDAO.update(teamMemberEntity);
 
-                        Snackbar snackbar = Snackbar.make(view, "Membro editado = " + name.getText().toString(), Snackbar.LENGTH_LONG);
+                        Snackbar snackbar = Snackbar.make(view, "Membro editado com sucesso! Nome: " + name.getText().toString(), Snackbar.LENGTH_LONG);
                         snackbar.show();
 
                         return teamMemberEntity.getId();
                     }
                 }.execute();
+                Navigation.findNavController(view).navigate(R.id.action_nav_edit_to_nav_list);
             }
         });
         return root;

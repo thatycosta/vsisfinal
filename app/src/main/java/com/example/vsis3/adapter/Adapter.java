@@ -88,10 +88,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                                 updateList(position);
                             }
                         }.execute();
-
-//                        teamMembers.remove(position);
-//                        notifyItemRemoved(position);
-
                     }}).setNegativeButton("Não", null).show();
     }
 

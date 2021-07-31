@@ -31,7 +31,7 @@
         android:label="Edição de Cadastro de Membro"
         tools:layout="@layout/fragment_editmember">
         <action
-            android:id="@+id/action_nav_add_to_nav_list"
+            android:id="@+id/action_nav_edit_to_nav_list"
             app:destination="@id/nav_list" />
     </fragment>
 
