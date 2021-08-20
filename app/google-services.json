@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "858272883516",
+    "project_id": "vsis3-ab2a6",
+    "storage_bucket": "vsis3-ab2a6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:858272883516:android:e502eec1bc0de523cb7439",
+        "android_client_info": {
+          "package_name": "com.example.vsis3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "858272883516-3vupc6r7uubc1ck327sisvpetjbhem21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKftKywE43c6katvDUH_N66LeWebtTP9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "858272883516-3vupc6r7uubc1ck327sisvpetjbhem21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
