@@ -9,6 +9,18 @@
     <string name="edit">Editar</string>
     <string name="excluir">Excluir</string>
 
+    <string name="login_title">Login</string>
+    <string name="login_email">E-mail</string>
+    <string name="login_password">Senha</string>
+    <string name="confirm_password">Confirme a senha</string>
+    <string name="login_btn">Login</string>
+    <string name="login_add">Cadastre-se</string>
+
+    <string name="cadUser_btnCad">CADASTRAR</string>
+    <string name="cadUser_btnCanc">CANCELAR</string>
+
+    <string name="addUser_title">Cadastro de Usuário</string>
+
 
     <string name="menu_inicio">Início</string>
     <string name="menu_listarequipe">Listar Equipe</string>

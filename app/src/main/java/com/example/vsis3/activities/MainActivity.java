@@ -1,7 +1,6 @@
-package com.example.vsis3.activies;
+package com.example.vsis3.activities;
 
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
@@ -37,24 +36,24 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        mAuth = FirebaseAuth.getInstance();
-
-        mAuth.createUserWithEmailAndPassword("tauane@gmail.com", "123456").addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Log.d("LOGIN", "createUser success");
-                    FirebaseUser user = mAuth.getCurrentUser();
-                    //updateUI(user);
-                }else{
-                    Toast.makeText(MainActivity.this, "Autenticacao falhou", Toast.LENGTH_LONG).show();
-                    Log.d("LOGIN", "falhou");
-                }
-            }
-        });
-
-       // mAuth = FirebaseAuth.getInstance();
-
+//        mAuth = FirebaseAuth.getInstance();
+//
+//        mAuth.createUserWithEmailAndPassword("tauane@gmail.com", "123456").addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+//            @Override
+//            public void onComplete(@NonNull Task<AuthResult> task) {
+//                if(task.isSuccessful()){
+//                    Log.d("LOGIN", "createUser success");
+//                    FirebaseUser user = mAuth.getCurrentUser();
+//                    //updateUI(user);
+//                }else{
+//                    Toast.makeText(MainActivity.this, "Autenticacao falhou", Toast.LENGTH_LONG).show();
+//                    Log.d("LOGIN", "falhou");
+//                }
+//            }
+//        });
+//
+//       // mAuth = FirebaseAuth.getInstance();
+//
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -110,6 +109,12 @@ public class MainActivity extends AppCompatActivity {
             AlertDialog alerta = builder.create();
             alerta.show();
         }
+
+        if(item.getItemId()== R.id.action_logout){
+            FirebaseAuth.getInstance().signOut();
+            finish();
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
